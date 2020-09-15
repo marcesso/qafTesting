@@ -1,0 +1,17 @@
+<configuration scan="true" scanPeriod="1 minutes">
+
+    <contextName>QAF Testing</contextName>
+
+    <include resource="org/springframework/boot/logging/logback/base.xml"/>
+
+    <logger name="org.springframework" level="WARN"/>
+
+    <logger name="sun.net.www.protocol.http" level="INFO" />
+
+    <logger name="jdk.event.security" level="INFO" />
+
+    <logger name="com.microsoft.sqlserver.jdbc" level="INFO" />
+
+    <logger name="com.zaxxer.hikari.pool.HikariPool" level="INFO" />
+
+</configuration>

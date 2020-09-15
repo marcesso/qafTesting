@@ -1,0 +1,11 @@
+<suite name="QAF Demo" verbose="0">
+    <parameter name="step.provider.pkg" value="my.custom.packagename.testing"/>
+    <parameter name="scenario.file.loc" value="src/test/resources/my/custom/packagename/testing"/>
+    <parameter name="step.provider.sharedinstance" value="true" />
+    <test name="BDD Test" enabled="true">
+        <classes>
+            <class name="com.qmetry.qaf.automation.step.client.text.BDDTestFactory2"></class>
+            <!--<class name="com.qmetry.qaf.automation.step.client.gherkin.GherkinScenarioFactory" />-->
+        </classes>
+    </test>
+</suite>
