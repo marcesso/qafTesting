@@ -9,9 +9,9 @@ import org.testng.Assert;
 @SpringBootTest
 public class CucumberTestDefinitions extends FunctionalTesting {
 
-    @Given("Nothing")
-    public void given() {
-        System.out.println("Nothing");
+    @Given("Nothing {int}")
+    public void given(int s) {
+        System.out.println("Nothing " + s);
     }
 
     @When("Nothing happens")
